@@ -1,3 +1,6 @@
+
+<%= image_tag photo, class: "img-responsive" %>
+
 <h1>Welcome to Rsoon's Travel Page</h1>
 <p>This is my very awesome travel site.</p>
 
@@ -10,7 +13,9 @@
   <% end %>
 </ol>
 
+<ul>
+  <% @travel_pics.each do |pic| %>
+  <li><%= image_tag pic, width: 500 %></li>
+  <% end %>
+</ul>
 
-<% @images_tag.each do |image| %>
-<%= image_tag image, width: 500 %>
-<% end %>
