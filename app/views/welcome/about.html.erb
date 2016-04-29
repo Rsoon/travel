@@ -10,11 +10,5 @@
 <h1>About Travel</h1>
 <p>Greetings, you've arrived to our about page. Our main goal is to provide you an effective and efficient submission to travel ports.</p>
 
-<%= link_to "Blue", about_path(color: "blue"), class: "btn btn-primary" %>
-
-
-<% if @size > 12 %>
-  <p>My shoe size is <%= @size %>. I have HUGE feet.</p>
-<% else %>
-  <p>My shoe size is <%= @size %></p>
-<% end %>
+<%= link_to "Cool", about_path(color: "blue"), class: "btn btn-primary" %>
+<%= link_to "Danger", about_path(color: "red"), class: "btn btn-danger" %>
