@@ -1,0 +1,13 @@
+<h1>Our Gallery</h1>
+<p>Here's our gallery of desserts</p>
+
+<ul style="center;"><%= link_to "water", about_path(color: "blue"), class: "btn btn-primary" %>
+<%= link_to "grass", about_path(color: "green"), class: "btn btn-success"
+ %>
+ <%= link_to "sky", about_path(color: "light-blue"), class: "btn btn-info" %>
+<%= link_to "dirt", about_path(color: "orange"), class: "btn btn-warning" %>
+<%= link_to "ground", about_path(color: "red"), class: "btn btn-danger" %>
+</ul>
+<% @dessert_pics.each do |pic| %>
+  <%= image_tag pic, height: 300, width: 500 %>
+<% end %>

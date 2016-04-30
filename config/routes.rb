@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'about' => 'welcome#about'
   get 'contact' => 'welcome#contact'
   get 'destination' => 'welcome#destination'
+  get 'gallery' => 'welcome#gallery'
   root 'welcome#index'
   
   # The priority is based upon order of creation: first created -> highest priority.
